@@ -38,16 +38,16 @@ const AnimatedCheckbox = (props: Props) => {
             stroke: interpolateColor(
                 Easing.bezier(0.16,1,0.3,1)(progress.value),
             [0,1],
-            ['#00000000', highlightColor],
+            ['#00000000', highlightedColor],
             'RGB'
         ),
         fill: interpolateColor(
             Easing.bezier(0.16,1,0.3,1)(progress.value),
             [0,1],
-            ['#00000000', highlightColor],
+            ['#00000000', highlightedColor],
             'RGB'
         )
-        }), [highlightColor, boxOutlineColor])
+        }), [highlightedColor, boxOutlineColor])
 
     return (
         <Svg 
